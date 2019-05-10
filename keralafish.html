@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <head>    
-    <title>Fizzit | Demo</title>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    <link rel="shortcut icon" href="./images/logogray2.ico">
+    
         <script>
             L_NO_TOUCH = false;
             L_DISABLE_3D = false;
@@ -43,6 +42,12 @@
 .blinking {
   animation: fade 1s infinite alternate;
 }
+.my-custom-control {
+  background-image: url('../images/legend.jpg');
+  width:xxpx; /* you will likely need to specify image width and height here */
+  height:xxpx;
+}
+
 #map_ff7612fee004441886d8403f58ad3b37 {
         position: relative;
         width: 100.0%;
@@ -54,7 +59,8 @@
         
 </head>
 <body>    
-    
+    <div id="map"></div>
+
             <div class="folium-map" id="map_ff7612fee004441886d8403f58ad3b37" ></div>
         
 </body>
@@ -72,9 +78,32 @@
                 }
             );
 
-            
+              L.control.scale().addTo(map_ff7612fee004441886d8403f58ad3b37);
 
-        
+    setInterval(function(){
+        map.setView([30, 30]);
+        setTimeout(function(){
+            map.setView([60, 0]);
+        }, 2000);
+    }, 4000);
+
+
+
+
+
+var logo = L.control({position: 'topright'});
+    logo.onAdd = function(map){
+        var div = L.DomUtil.create('div', 'myclass');
+        div.innerHTML= "<img src='f.png'/>";
+        return div;
+    }
+    logo.addTo(map_ff7612fee004441886d8403f58ad3b37);
+
+
+
+
+
+
     
             var tile_layer_dae33b92776342f091ded3164a2eaaf3 = L.tileLayer(
                 "https://{s}.tiles.mapbox.com/v3/mapbox.control-room/{z}/{x}/{y}.png",
@@ -110,7 +139,7 @@
                 {"bubblingMouseEvents": true,className:'blinking', "color": "#3c6887", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A6CAE0", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000*k, "stroke": true, "weight": 1}
             ).addTo(map_ff7612fee004441886d8403f58ad3b37); }
         
-    
+
         var popup_e350ddf9a99b45c5aed664548585cec6 = L.popup({"maxWidth": "100%"});
 
         
