@@ -6,15 +6,7 @@
             L_NO_TOUCH = false;
             L_DISABLE_3D = false;
         </script>
-
-
-
-    <link rel="stylesheet" href="leaflet.css" />
-<script src="leaflet.js"></script>
-<script src="leaflet-tilelayer-colorfilter.min.js"></script>
-
-
-
+    
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
@@ -79,22 +71,7 @@
                 }
             );
 
-            let myFilter = [
-    'blur:0px',
-    'brightness:95%',
-    'contrast:130%',
-    'grayscale:20%',
-    'hue:290deg',
-    'opacity:100%',
-    'invert:100%',
-    'saturate:300%',
-    'sepia:10%',
-];
-
-let myTileLayer = L.tileLayer.colorFilter('https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}.png', {
-    attribution: '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use">Wikimedia</a>',
-    filter: myFilter,
-}).addTo(map_ff7612fee004441886d8403f58ad3b37);
+            
 
         
     
