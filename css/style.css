@@ -436,6 +436,7 @@ body::-webkit-scrollbar-thumb {
     .section {
         position: relative;
         margin: 0px 0;
+        margin-top:-10px;
         padding: 60px 0;
         background-color: #F9F9F9;
         overflow: hidden;
