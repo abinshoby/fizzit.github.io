@@ -115,6 +115,7 @@ body{
 	background-color: #F9F9F9;
     overflow: hidden;
     margin-bottom: 0px;
+   
 }
 .topmargin-sm { margin-top: 30px !important; }
 /* .button.button-rounded { border-radius: 3px; }
@@ -432,14 +433,25 @@ body::-webkit-scrollbar-thumb {
 
        
     } */
+    .section {
+        position: relative;
+        margin: 0px 0;
+        padding: 60px 0;
+        background-color: #F9F9F9;
+        overflow: hidden;
+        margin-bottom: 0px;
+        max-height: 590px;
+
+       
+    }
     .headimg{
-        
+        max-height: max-content;
         
 
 
     }
     .headimg img{
-        height: 35%;
+        height: 40%;
         width:70%;
         margin-left:110px;
 
