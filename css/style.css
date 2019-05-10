@@ -417,15 +417,25 @@ body::-webkit-scrollbar-thumb {
        
     } */
     
+    .heading-block { margin-bottom: 50px;
+                    margin-left: 15px; }
+    #thm{
+        font-size: 50px;
+    }
+    .heading-block h1 img{
+        height:70px;
+
+
+    }
     .heading-block > span:not(.before-heading) {
         display: block;
         
-        margin-top: 10px;
+        ;
         font-size: 10px;
         font-weight: 300;
         color: #777;
-        margin-left:85px;
-    margin-top:-50px;
+        margin-left:90px;
+    margin-top:-20px;
     }
 
     .team .eachmem {
@@ -446,7 +456,7 @@ body::-webkit-scrollbar-thumb {
         text-align: center;
     }
     #qq{
-        margin-left: 40px;
+        margin-left: 20px;
        font-size: 10px;
     }
     #qb{
@@ -457,7 +467,7 @@ body::-webkit-scrollbar-thumb {
     }
     #ins{
      
-        margin-left: 35px;
+        margin-left: 20px;
         margin-top:-10px;
         font-size: 20px;
         font-style: italic;
@@ -465,13 +475,13 @@ body::-webkit-scrollbar-thumb {
         
     }
     .who{
-        margin-left: 200px;
+        margin-left: 180px;
         margin-top:100px;
         animation-timing-function: ease-in-out;
       
     }
     #qq2{
-        margin-left: 350px; 
+        margin-left: 330px; 
         font-size:10px;
         animation-timing-function: ease-in-out;
         
