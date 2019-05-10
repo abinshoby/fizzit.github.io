@@ -1,188 +1,152 @@
-<!DOCTYPE html>
-<head>    
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-    
-        <script>
-            L_NO_TOUCH = false;
-            L_DISABLE_3D = false;
-        </script>
-    
-    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
-<div id="map"></div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
-    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
-    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
-    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
-    
-            <meta name="viewport" content="width=device-width,
-                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-            <style>
-                #map_ff7612fee004441886d8403f58ad3b37 {
-                    position: relative;
-                    width: 100.0%;
-                    height: 100.0%;
-                    left: 0.0%;
-                    top: 0.0%;
-                }
+<html>
+<head>
+<title > Fizzit</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="./images/logogray2.ico">
+<script src="./js/jquery-3.4.1.min.js"></script>
+<link rel="stylesheet" href="./css/font-awesome.min.css"/>
+<link rel="stylesheet" href="./css/style.css"/>
+<link href="./css/fontgoogle.css" rel="stylesheet" type="text/css" />
+	<script src='./css/bootstrap.min.js'></script>
+<link rel="stylesheet" href="./css/bootstrap.css" type="text/css" />
+	<!-- <link rel="stylesheet" href="style.css" type="text/css" /> -->
+	<!-- <link rel="stylesheet" href="css/dark.css" type="text/css" /> -->
+	<link rel="stylesheet" href="./css/font-icons.css" type="text/css" />
+    <link rel="stylesheet" href="./css/responsive.css" type="text/css" />
 
-@keyframes fade { 
-  from { opacity: 0.2; } 
-}
 
-.blinking {
-  animation: fade 1s infinite alternate;
-}
-#map_ff7612fee004441886d8403f58ad3b37 {
-        position: relative;
-        width: 100.0%;
-        height: 100.0%;
-        left: 0.0%;
-        top: 0.0%;
-        }
-            </style>
-        
-</head>
-<body>    
-    
-            <div class="folium-map" id="map_ff7612fee004441886d8403f58ad3b37" ></div>
-        
-</body>
-<script>    
-    
-            var map_ff7612fee004441886d8403f58ad3b37 = L.map(
-                "map_ff7612fee004441886d8403f58ad3b37",
-                {
-                    center: [11.25, 75.78],
-                    crs: L.CRS.EPSG3857,
-                    zoom: 6,
-                    zoomControl: true,
-                    preferCanvas: false,
-                    opacity: 4,
-                }
-            );
-
+    <script>
+        var slideIndex = 0;
+        var no=2;//no of quotes
+        $(document).ready(function(){
             
-
+        showSlides();
+        });
         
+
+function showSlides() {
+ 
+  
+  //var slides = document.getElementsByClassName("mySlides");
+//   for (i = 0; i < slides.length; i++) {
+//     slides[i].style.display = "none"; 
+//   }
+  slideIndex++;
+  if (slideIndex > no) {slideIndex = 1;} 
+ 
+      if(slideIndex==2){
+      document.getElementById('ins').innerHTML='You can do it...';
+      document.getElementById('i2').innerHTML='Mr. X Joseph';
+      document.getElementById('i3').innerHTML='Chief Executive Of SIFFS';
+
+
+    //document.getElementsByClassName('w3-panel w3-card-4 w3-light-grey')[0].innerHTML="<p class='ent fade'><i class='fa fa-quote-right' id='qq'></i><br><h4 class='fade' id='ins'>Youcan do it...</h4><i class='fa fa-quote-right fade' id='qq2' aria-hidden='True'></i><span class='who fade' id='i2'>&nbsp; &nbsp;&nbsp;- Mr X Joseph</span> <span class='who fade' id='i3'>Chief Executive of SIFFS</span></p>";
+      }
+      else if(slideIndex==1){
+        document.getElementById('ins').innerHTML='This could be the next million dollar company...';
+      document.getElementById('i2').innerHTML='Mr. Thomas Cheriyan';
+      document.getElementById('i3').innerHTML='Chief Executive Of SIFFS';
+    //document.getElementsByClassName('w3-panel w3-card-4 w3-light-grey')[0].innerHTML=" <p class='ent fade'> <i class='fa fa-quote-right' id='qq'></i><br><h4  class='fade' id='ins'>This could be the next million dollar company...</h4><i class='fa fa-quote-right fade' id='qq2' aria-hidden='true'></i> <span class='who fade' id='i2'>&nbsp; &nbsp;&nbsp;- Mr Thomas Cheriyan</span> <span class='who fade'  id='i3'>Chief Executive of SIFFS</span></p>";
+      }
+  
+//   slides[slideIndex-1].style.display = "block"; 
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+    </script>
+
+</head>
+
+
+<body>
+
+    <!-- <div  id="head"> 
+       
+    </div> -->
+
+    <div class="section nobottommargin" style="padding-bottom: 150px;">
+
+        <div class="hidden-sm hidden-xs" style="position: absolute;top: 0;left: 0;width: 100%;height: 100%; background: transparent url('./images/ipad-section.png')  bottom right no-repeat;background-size: 800px 500px;"></div>
+
+        <div class="container clearfix" style="z-index: 1;">
+
+            <div class="col-md-6 col-sm-6 nobottommargin">
+
+                <div class="heading-block topmargin-sm">
+                    <h1><img src="./images/logogray.png" style="margin-bottom:20px;display: inline-block; margin-right:20px;">FIZZIT</h1>
+                    <span style="margin-left:140px;margin-top:-30px;">The Future of Fishing</span>
+                </div>
+
+                <p>We help  fisherman in identifying the potential fish zones through Machine learning and Data analytics. </p>
+
+                <p>Click the button below to see how it works.</p>
+
+                <a href="./keralafish.html" class="button button-border button-rounded button-large button-dark noleftmargin">View Demo</a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container clearfix">
+        <h3 id=teamt> Our Team</h3>
+        <div class="team">
+            <div class='eachmem'>
+        <img src="./images/team/rohith2.jpg"  alt="" class="rounded-circle">
+        <span>&nbsp;&nbsp;&nbsp;CEO</span>
+    </div>
     
-            var tile_layer_dae33b92776342f091ded3164a2eaaf3 = L.tileLayer(
-                "https://{s}.tiles.mapbox.com/v3/mapbox.control-room/{z}/{x}/{y}.png",
-                {"attribution": "Map tiles by \u0026copy; \u003ca href=\"http://www.mapbox.com/about/maps\"\u003eMapbox\u003c/a\u003e Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://creativecommons.org/licenses/by-sa/3.0\"\u003eCC BY SA\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
-            ).addTo(map_ff7612fee004441886d8403f58ad3b37);
-        
-        for(i=0;i<5;i++){
-	k=i/3;
+    <div class='eachmem'>
+        <img src="./images/team/abin.jpeg" alt="" class="rounded-circle" >
+        <span>Co-Founder</span>
+        </div>
 
-            var circle_f602199671f74fbc8c2a29af15613a5b = L.circle(
-                [15.71977, 72.783957],
-                {"bubblingMouseEvents": true,className: 'blinking', "color": "#3c6887", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A6CAE0", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000*k, "stroke": true, "weight": 1}
-            ).addTo(map_ff7612fee004441886d8403f58ad3b37); }
-        
+        <div class='eachmem'>
+        <img src="./images/team/sid2.jpg" alt="" class="rounded-circle" >
+        <span>Co-Founder</span>
+        </div>
+    </div>
     
-        var popup_d0ea500eaf0e4246919f2da4efab2fa9 = L.popup({"maxWidth": "100%"});
+    </div>
+    <div class="say"  id='qb'>
+        <br>
+           <h3 id="quoth" >What Our Partners Say...</h3>
+            
+            <div class="w3-panel w3-card-4 w3-light-grey " style="width:100%">
+                    <p class="ent">
+                    <i class="fa fa-quote-right" id='qq'></i><br>
+                    <h4 id="ins">This could be the next million dollar company...</h4>
+                    <i class="fa fa-quote-right" id='qq2' aria-hidden="true"></i>
+                           <span class='who' id='i2'>&nbsp; &nbsp;&nbsp;- Mr Thomas Cheriyan</span> 
+                        <span class="who" id='i3'>Chief Executive of SIFFS</span></p>
+                  </div>
+
+
+
+
+    </div>
+    <div class="container clearfix" >
+
+        <h3 id='part'> Our Partners</h3>
+
+        <ul class="clients-grid grid-4 nobottommargin clearfix">
+            <li><a href="#"><img src="./images/clients/incoisbw.png" alt="Clients"></a></li>
+             <li><a href="#"><img src="./images/clients/siffsbw.png" alt="Clients"></a></li>
+           
+        </ul>
+
+        <!-- <div class="divider"><i class="icon-circle"></i></div> -->
 
         
-            var html_52bd0c914c2c43b1ba870d6cdcb8b525 = $(`<div id="html_52bd0c914c2c43b1ba870d6cdcb8b525" style="width: 100.0%; height: 100.0%;">Goa  lat-15.71977 lon-72.783957</div>`)[0];
-            popup_d0ea500eaf0e4246919f2da4efab2fa9.setContent(html_52bd0c914c2c43b1ba870d6cdcb8b525);
         
 
-        circle_f602199671f74fbc8c2a29af15613a5b.bindPopup(popup_d0ea500eaf0e4246919f2da4efab2fa9)
-        ;
+    </div>
 
-        
-        for(i=0;i<5;i++){
-	k=i/3;
-
+<footer   style="text-align:center;height:50px;background-color:#e5e5e5;">
+    <br>
+   <span style="color:dimgrey;"> © 2019 Copyright: Fizzit</span>
+</footer>
     
-            var circle_952bf01d6a0846b1bedd97dd134e6171 = L.circle(
-                [10.888408, 74.735292],
-                {"bubblingMouseEvents": true,className:'blinking', "color": "#3c6887", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A6CAE0", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000*k, "stroke": true, "weight": 1}
-            ).addTo(map_ff7612fee004441886d8403f58ad3b37); }
-        
-    
-        var popup_e350ddf9a99b45c5aed664548585cec6 = L.popup({"maxWidth": "100%"});
+</body>
+</html>
 
-        
-            var html_47ce5a36e8e845dca1e5d766f7826a88 = $(`<div id="html_47ce5a36e8e845dca1e5d766f7826a88" style="width: 100.0%; height: 100.0%;">Manglore  lat-10.888408 lon-74.735292</div>`)[0];
-            popup_e350ddf9a99b45c5aed664548585cec6.setContent(html_47ce5a36e8e845dca1e5d766f7826a88);
-        
-
-        circle_952bf01d6a0846b1bedd97dd134e6171.bindPopup(popup_e350ddf9a99b45c5aed664548585cec6)
-        ;
-
-            for(i=0;i<5;i++){
-	k=i/2;
-
-    
-    
-            var circle_77788f1d5ca040d9be1866d6e66d6dd7 = L.circle(
-                [10.853466000000001, 80.35593399999999],
-                {"bubblingMouseEvents": true,className:'blinking', "color": "#3c6887", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A6CAE0", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000*k, "stroke": true, "weight": 1}
-            ).addTo(map_ff7612fee004441886d8403f58ad3b37); }
-        
-    
-        var popup_fc35038c116b40acb49937e61e2b7d5e = L.popup({"maxWidth": "100%"});
-
-        
-            var html_600afb8875ee4eefb0a938f31248df35 = $(`<div id="html_600afb8875ee4eefb0a938f31248df35" style="width: 100.0%; height: 100.0%;">Nagapattinam  lat-10.853466000000001 lon-80.35593399999999</div>`)[0];
-            popup_fc35038c116b40acb49937e61e2b7d5e.setContent(html_600afb8875ee4eefb0a938f31248df35);
-        
-
-        circle_77788f1d5ca040d9be1866d6e66d6dd7.bindPopup(popup_fc35038c116b40acb49937e61e2b7d5e)
-        ;
-
-        
-        for(i=0;i<5;i++){
-	k=i/5;
-
-    
-            var circle_7eb2ebdcc8ca4052ac6b67cb54af518a = L.circle(
-                [9.812628, 75.847748],
-                {"bubblingMouseEvents": true,className:'blinking', "color": "#3c6887", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A6CAE0", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000*k, "stroke": true, "weight": 1}
-            ).addTo(map_ff7612fee004441886d8403f58ad3b37);	}
-        
-    
-        var popup_72aaf4c49f6b49ac9c12ad2c7ebe4076 = L.popup({"maxWidth": "100%"});
-
-        
-            var html_33f5cd8509e84761a0911e3af5221df4 = $(`<div id="html_33f5cd8509e84761a0911e3af5221df4" style="width: 100.0%; height: 100.0%;">Kochi  lat-9.812628 lon-75.847748</div>`)[0];
-            popup_72aaf4c49f6b49ac9c12ad2c7ebe4076.setContent(html_33f5cd8509e84761a0911e3af5221df4);
-        
-
-        circle_7eb2ebdcc8ca4052ac6b67cb54af518a.bindPopup(popup_72aaf4c49f6b49ac9c12ad2c7ebe4076)
-        ;
-
-        
-    
-        for(i=0;i<5;i++){
-	k=i/3;
-
-            var circle_ba28ca1e879642c6b4585966f0df10ef = L.circle(
-                [8.206206, 76.52521],
-                {"bubblingMouseEvents": true,className:'blinking', "color": "#3c6887", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#A6CAE0", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 50000*k, "stroke": true, "weight": 1}
-            ).addTo(map_ff7612fee004441886d8403f58ad3b37);}
-        
-    
-        var popup_44df5b8c4d6d4b1dac2796a0155bbe9c = L.popup({"maxWidth": "100%"});
-
-        
-            var html_11dc75aa2a90409691fc20064176caa9 = $(`<div id="html_11dc75aa2a90409691fc20064176caa9" style="width: 100.0%; height: 100.0%;">Trivandrum  lat-8.206206 lon-76.52521</div>`)[0];
-            popup_44df5b8c4d6d4b1dac2796a0155bbe9c.setContent(html_11dc75aa2a90409691fc20064176caa9);
-        
-
-        circle_ba28ca1e879642c6b4585966f0df10ef.bindPopup(popup_44df5b8c4d6d4b1dac2796a0155bbe9c)
-        ;
-
-        
-    
-</script>
