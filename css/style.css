@@ -423,6 +423,128 @@ body::-webkit-scrollbar-thumb {
 
 
 } */
+@media(min-width:700px) and (max-width:900px){
+    /* PUT CSS HERE TO ALTER WEBSITE TO SINGLE COLUMN */
+    /* .backimg {
+
+        position: absolute;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        height: 100%; 
+        background: transparent url('./images/ipad-section.png')  bottom right no-repeat;
+        background-size: 100px 100px;
+
+       
+    } */
+    .section {
+        position: relative;
+        margin: 0px 0;
+        width:100%;
+        margin-top:-30px;
+        padding: 60px 0;
+        background-color: #F9F9F9;
+        overflow: hidden;
+        margin-bottom: 0px;
+        max-height: 590px;
+
+       
+    }
+    .headimg{
+        max-height: max-content;
+        
+
+
+    }
+    .headimg img{
+        height: 40%;
+        width:70%;
+        margin-left:110px;
+
+    }
+    .heading-block { margin-bottom: 50px;
+                    margin-left: 15px; }
+    #thm{
+        font-size: 50px;
+    }
+    .heading-block h1 img{
+        height:70px;
+
+
+    }
+    .heading-block > span:not(.before-heading) {
+        display: block;
+        
+        ;
+        font-size: 10px;
+        font-weight: 300;
+        color: #777;
+        margin-left:90px;
+    margin-top:-20px;
+    }
+
+    .team .eachmem {
+        display: inline-block;
+        margin-left: 40px;
+        margin-bottom: 40px;
+    }
+    .say{
+        margin-top:640px;
+    }
+
+
+    #quoth{
+        font-size: 30px;
+        
+        margin-top: 20px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    #qq{
+        /* margin-left: 20px; */
+        margin-left: 5px;
+       /* font-size: 10px; */
+       height:4%;
+       width:10%;
+    }
+    #qb{
+        background-color: #F9F9F9;
+        margin-left: 0px;
+        height: 350px;
+        
+    }
+    #ins{
+     
+        margin-left: 20px;
+        margin-top:-10px;
+        font-size: 20px;
+        font-style: italic;
+        animation-timing-function: ease-in-out;
+        
+    }
+    .who{
+        margin-left: 180px;
+        margin-top:100px;
+        animation-timing-function: ease-in-out;
+      
+    }
+    #qq2{
+        margin-left: 320px; 
+        /* font-size:10px; */
+        height:4%;
+        width:10%;
+        animation-timing-function: ease-in-out;
+        
+    }
+    .clients-grid,
+.testimonials-grid {
+	list-style: none;
+    overflow: hidden;
+    margin-left:0px;
+    
+}
+
+}
   @media (max-width: 700px) {
     /* PUT CSS HERE TO ALTER WEBSITE TO SINGLE COLUMN */
     /* .backimg {
