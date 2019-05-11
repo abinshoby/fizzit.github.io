@@ -405,7 +405,7 @@ body::-webkit-scrollbar-thumb {
     animation-timing-function: ease-in-out;
     
   }
-  @media (min-width:700px){
+  @media (min-width:900px){
 .headimg{
     display: none;
 }}
