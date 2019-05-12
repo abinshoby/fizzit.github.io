@@ -646,6 +646,8 @@ body::-webkit-scrollbar-thumb {
     
 }
 
+
+
 }
   @media (max-width: 700px) {
     /* PUT CSS HERE TO ALTER WEBSITE TO SINGLE COLUMN */
@@ -713,7 +715,7 @@ body::-webkit-scrollbar-thumb {
         margin-bottom: 40px;
     }
     .say{
-        margin-top:640px;
+        margin-top:0px;
     }
 
 
@@ -768,5 +770,67 @@ body::-webkit-scrollbar-thumb {
     
 }
 
+#visb{
+    height:500px;
+    /* position: relative; */
+
+    width:100%;
+/* z-index: 0; */
+   
+    margin-top:40px;
+    background: rgba(0, 0, 0, 0.6);
+    /* opacity: 0.6; */
+    background: url("../images/Kerala_fisherman.png") no-repeat ;
+    background-size: 100% 100% ;
+        /* background-color: #fff; */
+    /* filter:alpha(opacity=40); */
+    /* z-index: -2;*/
+     
+    
+}
+.container #part:after {
+    display: none;
+    content: "";
+    position: absolute;
+    bottom: -1230px;
+    left: 50%;
+    width: 60px;
+    height: 1px;
+    background-color: rgb(1, 10, 15);
+    margin-left: -30px;
+}
+.say h3:after {
+    display: none;
+    content: "";
+    position: absolute;
+    bottom: -900px;
+    left: 50%;
+    width: 60px;
+    height: 1px;
+    background-color: rgb(1, 10, 15);
+    margin-left: -30px;
+}
+.container h3:after {
+    display: none;
+    content: "";
+    position: absolute;
+    bottom: -400px;
+    left: 50%;
+    width: 60px;
+    height: 1px;
+    background-color: rgb(1, 10, 15);
+    margin-left: -30px;
+}
+#abth::after{
+    display: none;
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    width: 60px;
+    height: 1px;
+    background-color: rgb(1, 10, 15);
+    margin-left: -30px;
+}
 
  }
