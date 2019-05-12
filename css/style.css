@@ -789,6 +789,7 @@ body::-webkit-scrollbar-thumb {
     
 }
 .container #part:after {
+	 display: none;
     content: "";
     position: absolute;
     bottom: -1230px;
@@ -799,6 +800,7 @@ body::-webkit-scrollbar-thumb {
     margin-left: -30px;
 }
 .say h3:after {
+	 display: none;
     content: "";
     position: absolute;
     bottom: -900px;
@@ -809,6 +811,7 @@ body::-webkit-scrollbar-thumb {
     margin-left: -30px;
 }
 .container h3:after {
+	 display: none;
     content: "";
     position: absolute;
     bottom: -400px;
@@ -819,6 +822,7 @@ body::-webkit-scrollbar-thumb {
     margin-left: -30px;
 }
 #abth::after{
+	 display: none;
     content: "";
     position: absolute;
     bottom: 10px;
