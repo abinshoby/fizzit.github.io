@@ -405,7 +405,7 @@ body::-webkit-scrollbar-thumb {
 #abth::after{
     content: "";
     position: absolute;
-    bottom: -70px;
+    bottom: -100px;
     left: 50%;
     width: 60px;
     height: 1px;
@@ -436,7 +436,7 @@ body::-webkit-scrollbar-thumb {
   .container h3:after {
     content: "";
     position: absolute;
-    bottom: -430px;
+    bottom: -470px;
     left: 50%;
     width: 60px;
     height: 1px;
@@ -447,7 +447,7 @@ body::-webkit-scrollbar-thumb {
 .say h3:after {
     content: "";
     position: absolute;
-    bottom: -950px;
+    bottom: -990px;
     left: 50%;
     width: 60px;
     height: 1px;
@@ -457,7 +457,7 @@ body::-webkit-scrollbar-thumb {
 .container #part:after {
     content: "";
     position: absolute;
-    bottom: -1260px;
+    bottom: -1300px;
     left: 50%;
     width: 60px;
     height: 1px;
