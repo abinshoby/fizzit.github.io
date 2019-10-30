@@ -691,7 +691,7 @@ body::-webkit-scrollbar-thumb {
     .heading-block { margin-bottom: 50px;
                     margin-left: 15px; }
     #thm{
-        font-size: 50px;
+        font-size: 25px;
     }
     .heading-block h1 img{
         height:70px;
@@ -769,7 +769,9 @@ body::-webkit-scrollbar-thumb {
     margin-left:0px;
     
 }
-
+.cb{
+    align-content: center;
+}
 #visb{
     height:540px;
     /* position: relative; */
@@ -797,7 +799,7 @@ body::-webkit-scrollbar-thumb {
     width: 60px;
     height: 1px;
     background-color: rgb(1, 10, 15);
-    margin-left: -30px;
+    margin-left: -90px;
 }
 .say h3:after {
 	 display: none;
