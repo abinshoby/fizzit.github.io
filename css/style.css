@@ -566,8 +566,8 @@ body::-webkit-scrollbar-thumb {
     }
     .heading-block { margin-bottom: 50px;
                     margin-left: 15px; }
-    #thm{
-        font-size: 50px;
+    .thm{
+        font-size: 80px;
     }
     .heading-block h1 img{
         height:70px;
